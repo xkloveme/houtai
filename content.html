@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+		<title>bootstrap项目实战</title>
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+	</head>
+
+	<body>
+		<!--导航-->
+		<header>
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="container">
+
+					<div class="navbar-header">
+						<a href="" class="navbar-brand" style="color: #000;font-weight: 900;font-size: 30px;font-family: 黑体;"><b>后台管理</b></a>
+						<button class="navbar-toggle navbar" data-toggle="collapse" data-target="#navbarContent">
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+					</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="nav navbar-nav ">
+							<li>
+								<a href="index.html">
+									<span class="glyphicon glyphicon-home"></span>
+									<b>后台首页</b></a>
+							</li>
+							<li>
+
+								<a href="user_list.html">
+									<span class="glyphicon glyphicon-user"></span>
+
+									<b>用户管理</b></a>
+							</li>
+							<li>
+
+								<a href="content.html">
+									<span class=" glyphicon glyphicon-list"></span>
+									<b>内容管理</b></a>
+							</li>
+							<li>
+
+								<a href="tag.html">
+									<span class="glyphicon glyphicon-tag"></span>
+									<b>标签管理</b></a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<!--<a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+							<a id="dLabel" type="button" data-toggle="dropdown">
+								admin
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<li>
+									<a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a>
+								</li>
+								<li>
+									<a href="index.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a>
+								</li>
+								<li>
+									<a href="index.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a>
+								</li>
+								<li>
+									<a href="index.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a>
+								</li>
+								<li>
+									<a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#bbs"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+
+			</nav>
+		</header>
+		<!--导航-->
+		<div class="container">
+			<div class="col-md-offset-1">
+			</div>
+			<div class="col-md-2">
+				<ul class="list-group nav nav-tabs nav-pills nav-stacked tabnav ">
+					<li class="active">
+						<a href="#list" class="list-group-item" data-toggle="tab">
+							内容管理
+						</a>
+					</li>
+					<li>
+						<a href="#add" class="list-group-item " data-toggle="tab">添加内容</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="col-md-9">
+				<h2>内容管理</h2>
+				<div class="divider">
+					<hr>
+				</div>
+				<ul id="myTab" class="nav nav-tabs">
+					<li class="active">
+						<a href="#list" data-toggle="tab">
+							内容管理
+						</a>
+					</li>
+					<li>
+						<a href="#add" data-toggle="tab">添加内容</a>
+					</li>
+					
+
+				</ul>
+				<div id="myTabContent" class="tab-content">
+					<div class="tab-pane fade in active" id="user">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>文章标题</th>
+									<th>作者</th>
+									<th>发布时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">慧与职业教育， 效果和就业为王</th>
+									<td>张小三</td>
+									<td>2016/12/1</td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-info  dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+    操作<span class="caret"></span>
+  </button>
+											<ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="#">编辑</a>
+												</li>
+												<li>
+													<a href="#">删除</a>
+												</li>
+												<li>
+													<a href="#">锁定</a>
+												</li>
+												<li>
+													<a href="#">修改密码</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">慧与职业教育， 效果和就业为王</th>
+									<td>张小三</td>
+									<td>2016/12/1</td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-info  dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+    操作<span class="caret"></span>
+  </button>
+											<ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="#">编辑</a>
+												</li>
+												<li>
+													<a href="#">删除</a>
+												</li>
+												<li>
+													<a href="#">锁定</a>
+												</li>
+												<li>
+													<a href="#">修改密码</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">慧与职业教育， 效果和就业为王</th>
+									<td>张小三</td>
+									<td>2016/12/1</td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-info  dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+    操作<span class="caret"></span>
+  </button>
+											<ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="#">编辑</a>
+												</li>
+												<li>
+													<a href="#">删除</a>
+												</li>
+												<li>
+													<a href="#">锁定</a>
+												</li>
+												<li>
+													<a href="#">修改密码</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">慧与职业教育， 效果和就业为王</th>
+									<td>张小三</td>
+									<td>2016/12/1</td>
+									<td>
+										<div class="btn-group">
+											<button class="btn btn-info  dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+    操作<span class="caret"></span>
+  </button>
+											<ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="#">编辑</a>
+												</li>
+												<li>
+													<a href="#">删除</a>
+												</li>
+												<li>
+													<a href="#">锁定</a>
+												</li>
+												<li>
+													<a href="#">修改密码</a>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+					</div>
+					<div class="tab-pane fade" id="add">
+						<form action="" method="post" class="form-group">
+							<h2>标题</h2>
+							<input type="text" name="" id="" value="" class="form-control"placeholder="请输入文章标题"/>
+							
+						<h2>文章内容</h2>
+<textarea name="" rows="" cols="" placeholder="请输入文章正文部分" class="form-control"></textarea>
+ <div class="checkbox">
+    <label>
+      <input type="checkbox">置顶
+    </label>
+  </div>
+  <input type="submit" value="发布文章" class="btn btn-info "/>
+						</form>
+
+						
+					</div>
+				</div>
+
+				<div id="mymodel" class="modal" data-backdrop="static" data-show="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+								<h3><span class="glyphicon glyphicon-log-in"></span> 添加用户</h3>
+							</div>
+							<div class="modal-body">
+
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label for="user" class="col-sm-4 control-label">用户名</label>
+										<div class="col-sm-6 ">
+											<input type="text" class="form-control" id="user" placeholder="请输入用户名">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Password3" class="col-sm-4 control-label">密码</label>
+										<div class="col-sm-6 ">
+											<input type="password" class="form-control" id="Password3" placeholder="请输入密码">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Password2" class="col-sm-4 control-label">确认密码</label>
+										<div class="col-sm-6 ">
+											<input type="password" class="form-control" id="Password2" placeholder="请确认密码">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Password2" class="col-sm-4 control-label">用户邮箱</label>
+										<div class="col-sm-6 ">
+											<input type="email" class="form-control" id="Password2" placeholder="请输入邮箱">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Password2" class="col-sm-4 control-label">所属用户组</label>
+										<div class="col-sm-6 ">
+											<select name="" class="form-control">
+												<option value="">限制会员</option>
+												<option value="">新手上路</option>
+												<option value="">注册会员</option>
+												<option value="">中级会员</option>
+												<option value="">终极会员</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-4 col-sm-8">
+											<button type="submit" class="btn btn-danger" data-dismiss="model">关闭</button>
+											<button type="submit" class="btn btn-primary">提交</button>
+
+										</div>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+			<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+							&copy;Copyright © 2016-2026  www.jixiaokang.xyz  豫ICP备12345678号-1
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+		<!--footer-->
+
+		<script src="scripts/jquery.min.js"></script>
+		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="scripts/Chart.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/script.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#test").load("menu.html");
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.nav-tabs a').on('click', function(e) {
+					//阻止默认行为
+					//		e.preventDefault();
+					$(this).tab('show');
+					var text = $(this).attr("href");
+					$("a").parent().removeClass("active");
+					$("a[href=" + text + "]").parent().addClass("active");
+				});
+
+				
+			});
+		</script>
+	</body>
+
+</html>
